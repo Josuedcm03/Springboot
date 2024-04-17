@@ -6,7 +6,4 @@ import org.springframework.stereotype.Repository;
 
 @Repository //spring lo reconoce como un repositorio
 public interface IRepoUsuario extends JpaRepository<Usuario, Integer> {
-
-
-
 }

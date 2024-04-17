@@ -40,7 +40,7 @@ public class ControllerUsuario {
         if (id == null) {
             return ResponseEntity.badRequest().body("Id no existente");
         }
-        serviceUsuario.delete(id);
-        return ResponseEntity.ok("Usuario borrado");
+            serviceUsuario.delete(id);
+            return ResponseEntity.ok("Usuario borrado");
     }
 }
