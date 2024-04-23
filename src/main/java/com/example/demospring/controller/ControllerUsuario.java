@@ -31,8 +31,8 @@ public class ControllerUsuario {
         if(usuario.getId() == null){
             return ResponseEntity.badRequest().body("Id no existente");
     }
-    serviceUsuario.create(usuario);
-    return ResponseEntity.ok("Usuario Actualizado");
+        serviceUsuario.create(usuario);
+        return ResponseEntity.ok("Usuario Actualizado");
     }
 
     @DeleteMapping("/delete/{id}")
